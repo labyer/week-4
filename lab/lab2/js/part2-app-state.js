@@ -75,6 +75,7 @@ var removeMarkers = function(data) {
   Note: You can add or remove from the code at the bottom of this file.
 ===================== */
 
+//creat a filter that takes all the crashes tha occured from January to April
 var filterData = function(data){
   return _.filter(data, function(i){
     return i.DATE_OF_MO < 5;
