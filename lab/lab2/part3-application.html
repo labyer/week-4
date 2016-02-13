@@ -8,15 +8,93 @@
 
     <!--Left Panel-->
     <div style="position: absolute; left: 0px; width: 400px; top: 0; bottom: 0;">
+      <h1 class = 'header'> Philadelphia Bike Crashes </h1>
       <br>
+      <br>
+      <!--create month range drop down menus-->
+      <h2 class = 'subheader'> Months of Crashes </h2>
+      From <select id="num1" type="number">
+        <option value=0> </option>
+        <option value=1>January</option>
+        <option value=2>February</option>
+        <option value=3>March</option>
+        <option value=4>April</option>
+        <option value=5>May</option>
+        <option value=6>June</option>
+        <option value=7>July</option>
+        <option value=8>August</option>
+        <option value=9>September</option>
+        <option value=10>October</option>
+        <option value=11>November</option>
+        <option value=12>December</option>
+      </select>
+      to <select id="num2" type="number">
+        <option value=12> </option>
+        <option value=1>January</option>
+        <option value=2>February</option>
+        <option value=3>March</option>
+        <option value=4>April</option>
+        <option value=5>May</option>
+        <option value=6>June</option>
+        <option value=7>July</option>
+        <option value=8>August</option>
+        <option value=9>September</option>
+        <option value=10>October</option>
+        <option value=11>November</option>
+        <option value=12>December</option>
+      </select>
+      <br>
+      <br>
+
+<!--
+//ORIGINAL CODE
       Numeric filter: <input id="num1" type="number" name="num1" value=""> to <input id="num2" type="number" name="num2" value="">
       <br>
-      String filter: <input id="string" type="text">
       <br>
-      Boolean filter: <input id="boolean" type="checkbox">
+-->
+
+      <!--create station drop down menu
+      <h2 class = 'subheader'> Responding Police Station </h2>
+      Station <select id="station" >
+        <option value=0> </option>
+        <option value='68K01'>68K01</option>
+      </select>
       <br>
-      <button id="my-button">Plot Data</button>
+      <br>
+-->
+
+      <h2 class = 'subheader'> Responding Police Station </h2>
+      <p> *Hint: Type in: 46101, 46102, 46104, 46108, 67301, 67501, 67504, 67505, or 68K01 </p>
+      String filter: <input id="station" type="text">
+      <br>
+      <br>
+
+      <!--create check box to see just crashed with property damage-->
+      <h2 class = 'subheader'> Curious about Property Damage? </h2>
+      Click to see crashes involving property damage: <input id="boolean" type="checkbox">
+      <br>
+      <br>
+      <br>
+      <br>
+      <button id="plot-button" onclick="whichButton(this)">Plot Data</button>
+      <br>
+      <br>
+      <button id="reset-button" onclick="whichButton(this)">Reset Map</button>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Map -->
     <div id="map" style="position: absolute; right: 0; left: 400px; top: 0; bottom: 0;"></div>
 
@@ -29,5 +107,22 @@
     <script src="js/part3-setup.js"></script>
     <script src="js/part3-application.js"></script>
     <script src="js/part3-main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
