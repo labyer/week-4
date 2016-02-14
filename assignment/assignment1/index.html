@@ -17,35 +17,75 @@
 
     ## Introduction
 
-    We've got some interesting school data that we're working with. In addition
-    to displaying it on the map, we also want to show it in a list. Notice that
-    our project has an element, .sidebar, that contains no content. We are going
-    to fill it with filtering functionality and a list of schools.
+    We've got some interesting school data that we're working with. In addition to displaying it on the map, we also want to show it in a list. Notice that our project has an element, .sidebar, that contains no content. We are going to fill it with filtering functionality and a list of schools.
 
     ## Build components with HTML and CSS
 
-    Take a look at the image assignment-screen.png. Add HTML inside of the
-    element <div class="sidebar"></div> and add CSS inside the file
-    css/style.css to recreate this content in the browser. You do not need to
-    create the list of schools dynamically using the data—just hardcode three schools (in a future assignment, we will generate the list with the same data that we use to generate markers on our map!).
+    Take a look at the image assignment-screen.png. Add HTML inside of the element
+    <div class="sidebar"></div>
+    and add CSS inside the file css/style.css to recreate this content in the browser. You do not need to create the list of schools dynamically using the data—just hardcode three schools (in a future assignment, we will generate the list with the same data that we use to generate markers on our map!).
 
     Start by trying to make it look as much like the image as possible.
 
     ## Make it look cool
 
-    Try changing the colors or spacing. Make it look a little different. There
-    is no right answer here: just try something and make it your own. Take a
-    look at neat websites on https://www.typewolf.com/ or http://www.awwwards.com/
-    for color or styling inspiration.
+    Try changing the colors or spacing. Make it look a little different. There is no right answer here: just try something and make it your own. Take a
+    look at neat websites on https://www.typewolf.com/ or http://www.awwwards.com/ for color or styling inspiration.
 
     ====================== -->
 
     <!-- Sidebar -->
     <div class="sidebar">
-
-      <!-- =====================
-      Add HTML!
-      ====================== -->
+      <h1 class = 'main_header'>Filters</h1>
+      <button class = 'button' id="plot-button" onclick="whichButton(this)">Hide Filters</button>
+      <p class = 'prompt'>By Name</p>
+      <input id = 'name' type="text">
+      <br>
+      <p class = 'prompt'>By Grade</p>
+      <select id = 'grade' type = 'number' class = 'grades'>
+        <option value = ''>All Grades</option>
+        <option value = 0>K</option>
+        <option value = 1>1</option>
+        <option value = 2>2</option>
+        <option value = 3>3</option>
+        <option value = 4>4</option>
+        <option value = 5>5</option>
+        <option value = 6>6</option>
+        <option value = 7>7</option>
+        <option value = 8>8</option>
+        <option value = 9>9</option>
+        <option value = 10>10</option>
+        <option value = 11>11</option>
+        <option value = 12>12</option>
+      </select>
+      <br>
+      <br>
+      <hr>
+      <h1 class = 'main_header'>Schools</h1>
+      <br>
+      <div class = 'schools'>
+        <h3>Henry, Charles W.</h3>
+        <p style = 'color: #202020'>Elem/Middle</p>
+        <br>
+        <p>601 Carpenter La.</p>
+        <p>19119-3405</p>
+      </div>
+      <br>
+      <div class = 'schools'>
+        <h3>Universal Creighton Charter School</h3>
+        <p style = 'color: #202020'>Elem/Middle</p>
+        <br>
+        <p>5401 Tabor Ave.</p>
+        <p>19120-3614</p>
+      </div>
+      <br>
+      <div class = 'schools'>
+        <h3>Marshall, John</h3>
+        <p style = 'color: #202020'>Elemenary School</p>
+        <br>
+        <p>601 Carpenter La.</p>
+        <p>19119-3405</p>
+      </div>
 
     </div>
     <!-- Map -->

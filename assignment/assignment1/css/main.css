@@ -18,10 +18,41 @@ body {
 
 .sidebar {
     position: absolute;
+    background-color: #202020;
     left: 0px;
     width: 340px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
     padding: 20px;
+    color: #F8F8F8;
+}
+
+.main-header {
+    font-family: arial;
+}
+
+.prompt {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.grades{
+  font-family: arial;
+  color: black;
+}
+
+.button {
+  font-family: arial;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: black;
+}
+
+.schools {
+  background-color: #707070;
+  font-family: arial;
+  color: white;
+  padding: 10px;
 }
