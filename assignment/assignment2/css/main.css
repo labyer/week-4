@@ -4,6 +4,55 @@ body {
     font-family: helvetica, arial, sans-serif;
 }
 
-/* =================
-Add more styles here!
-================= */
+.h4 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+.button-use-it {
+    background-color: #00CCCC;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 35%;
+    top: 55%;
+}
+
+.button-fork-me {
+    background-color: #585858;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 35%;
+    top: 63%;
+}
+
+.top-grey-box{
+  background-color: #F8F8F8;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  height: 500px;
+}
+
+.bottom-grey-box{
+  background-color: #D0D0D0;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 500px;
+  bottom: 0;
+}
